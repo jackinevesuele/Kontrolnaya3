@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Портфолио</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+    <div class="page">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <h1 class="header__title">Евгений Босарев</h1>
+                    <p class="header__subtitle">Студент-разработчик</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="container">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="projects.html" class="nav__link">Проекты</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="diary.html" class="nav__link">Дневник</a>
+                    </li>
+                    <li class="nav__item nav__item--active">
+                        <a href="contacts.html" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main">
+            <div class="container">
+                <section class="contacts">
+                    <h2 class="section-title">Свяжитесь со мной</h2>
+                    
+                    <div class="contacts__content">
+                        <!-- Форма обратной связи -->
+                        <div class="contact-form">
+                            <h3 class="contact-info__title">Форма обратной связи</h3>
+                            <form class="form" id="contactForm">
+                                <div class="form__group">
+                                    <label for="name" class="form__label">Имя</label>
+                                    <input type="text" id="name" name="name" class="form__input" 
+                                           placeholder="Введите ваше имя" required>
+                                </div>
+
+                                <div class="form__group">
+                                    <label for="email" class="form__label">Email</label>
+                                    <input type="email" id="email" name="email" class="form__input" 
+                                           placeholder="Введите ваш email" required>
+                                </div>
+
+                                <div class="form__group">
+                                    <label for="message" class="form__label">Сообщение</label>
+                                    <textarea id="message" name="message" class="form__textarea" 
+                                              placeholder="Введите ваше сообщение..." 
+                                              rows="5" required></textarea>
+                                </div>
+
+                                <button type="submit" class="button button--primary form__button">
+                                    Отправить сообщение
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- Контактная информация -->
+                        <div class="contact-info">
+                            <h3 class="contact-info__title">Контактная информация</h3>
+                            <div class="contact-info__items">
+                                <div class="contact-item">
+                                    <div class="contact-item__icon">
+                                        <img src="../images/icons/email.svg" alt="Email" class="icon-svg responsive-image">
+                                    </div>
+                                    <div class="contact-item__content">
+                                        <h4 class="contact-item__title">Email</h4>
+                                        <p class="contact-item__value">bosarev.e.v@edu.mirea.ru</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item">
+                                    <div class="contact-item__icon">
+                                        <img src="../images/icons/github.svg" alt="Github" class="icon-svg responsive-image">
+                                    </div>
+                                    <div class="contact-item__content">
+                                        <h4 class="contact-item__title">GitHub</h4>
+                                        <p class="contact-item__value">https://github.com/jackinevesuele</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item">
+                                    <div class="contact-item__icon">
+                                        <img src="../images/icons/location.svg" alt="Location" class="icon-svg responsive-image">
+                                    </div>
+                                    <div class="contact-item__content">
+                                        <h4 class="contact-item__title">Местоположение</h4>
+                                        <p class="contact-item__value">Москва, Россия</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <p class="footer__copyright">&copy; 2025 Босарев Евгений</p>
+                    <div class="footer__links">
+                        <a href="mailto:bosarev.e.v@edu.mirea.ru" class="footer__link">Email</a>
+                        <a href="https://github.com/jackinevesuele" class="footer__link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

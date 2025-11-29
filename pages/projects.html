@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои проекты - Босарев Евгений</title>
+    <link rel="stylesheet" href="../style/styles.css">
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/filters.js"></script>
+</head>
+<body>
+    <div class="page">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <h1 class="header__title">Евгений Босарев</h1>
+                    <p class="header__subtitle">Студент-разработчик</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="container">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item nav__item--active">
+                        <a href="projects.html" class="nav__link">Проекты</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="diary.html" class="nav__link">Дневник</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contacts.html" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main">
+            <div class="container">
+                <section class="projects">
+                    <div class="projects__header">
+                        <h2 class="section-title">Мои проекты</h2>
+                        <div class="projects__filters">
+                            <button class="filter filter--active" data-filter="all">Все</button>
+                            <button class="filter" data-filter="html">HTML/CSS</button>
+                            <button class="filter" data-filter="js">JavaScript</button>
+                            <button class="filter" data-filter="react">React</button>
+                            <button class="filter" data-filter="bootstrap">Bootstrap</button>
+                        </div>
+                    </div>
+
+                    <div class="projects__grid">
+                        <!-- Проект 1 -->
+                        <article class="project-card" data-tech="html">
+                            <div class="project-card__image">
+                                <img src="../images/project1.jpg" alt="Личный сайт" class="responsive-image" onerror="this.src='../images/placeholder.jpg'">
+                            </div>
+                            <div class="project-card__content">
+                                <h3 class="project-card__title">Личный сайт</h3>
+                                <p class="project-card__description">
+                                    Адаптивный сайт-портфолио с современным дизайном, созданный на чистом HTML и CSS с использованием CSS Grid и Flexbox
+                                </p>
+                                <div class="project-card__tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">Адаптивный дизайн</span>
+                                </div>
+                                <button class="button button--primary project-card__button">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </article>
+
+                        <!-- Проект 2 -->
+                        <article class="project-card" data-tech="js">
+                            <div class="project-card__image">
+                                <img src="../images/project2.jpg" alt="Todo приложение" class="responsive-image" onerror="this.src='../images/placeholder.jpg'">
+                            </div>
+                            <div class="project-card__content">
+                                <h3 class="project-card__title">Todo-приложение</h3>
+                                <p class="project-card__description">
+                                    Приложение для управления задачами с возможностью добавления, редактирования, удаления и фильтрации задач. Использует LocalStorage для сохранения данных
+                                </p>
+                                <div class="project-card__tags">
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">DOM API</span>
+                                </div>
+                                <button class="button button--primary project-card__button">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </article>
+
+                        <!-- Проект 3 -->
+                        <article class="project-card" data-tech="react">
+                            <div class="project-card__image">
+                                <img src="../images/project3.jpg" alt="Интернет-магазин" class="responsive-image" onerror="this.src='../images/placeholder.jpg'">
+                            </div>
+                            <div class="project-card__content">
+                                <h3 class="project-card__title">Интернет-магазин</h3>
+                                <p class="project-card__description">
+                                    Прототип интернет-магазина с корзиной товаров, фильтрацией по категориям и поиском. Реализован на React с использованием хуков и контекста
+                                </p>
+                                <div class="project-card__tags">
+                                    <span class="tag">React</span>
+                                </div>
+                                <button class="button button--primary project-card__button">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </article>
+
+                        <!-- Проект 4 -->
+                        <article class="project-card" data-tech="bootstrap">
+                            <div class="project-card__image">
+                                <img src="../images/project4.jpg" alt="Портфолио" class="responsive-image" onerror="this.src='../images/placeholder.jpg'">
+                            </div>
+                            <div class="project-card__content">
+                                <h3 class="project-card__title">Портфолио на Bootstrap</h3>
+                                <p class="project-card__description">
+                                    Адаптивное портфолио созданное с использованием Bootstrap 5. Включает карусель проектов, модальные окна и responsive навигацию
+                                </p>
+                                <div class="project-card__tags">
+                                    <span class="tag">Bootstrap</span>
+                                </div>
+                                <button class="button button--primary project-card__button">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <p class="footer__copyright">&copy; 2025 Босарев Евгений</p>
+                    <div class="footer__links">
+                        <a href="mailto:bosarev.e.v@edu.mirea.ru" class="footer__link">Email</a>
+                        <a href="https://github.com/jackinevesuele" class="footer__link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
